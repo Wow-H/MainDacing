@@ -83,7 +83,13 @@ public class VideoActivity extends RobotActivity implements View.OnClickListener
         setContentView(R.layout.activity_vedio);
         initView();
         //requestPermission();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        playVideoRaw();
     }
 
     private void requestPermission() {
@@ -97,48 +103,47 @@ public class VideoActivity extends RobotActivity implements View.OnClickListener
     private void initView() {
         video = (VideoView) findViewById(R.id.video);
 
-        raw = (Button) findViewById(R.id.raw);
-        raw.setOnClickListener(this);
+        //raw = (Button) findViewById(R.id.raw);
+        //raw.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
-
-
-                playVideoRaw();
-
-
+        //playVideoRaw();
     }
 
     /**
      * 播放raw的小视频
      */
     private void playVideoRaw() {
-        mediaController = new MediaController(this);
+        //mediaController = new MediaController(this);
         //获取raw.mp4的uri地址
 
         video.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.video);
         //让video和mediaController建立关联
-        video.setMediaController(mediaController);
-        mediaController.setMediaPlayer(video);
+        //video.setMediaController(mediaController);
+        //mediaController.setMediaPlayer(video);
         //让video获取焦点
-        video.requestFocus();
+        //video.requestFocus();
         //监听播放完成，
-        video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        /*video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 //重新开始播放
                 video.start();
             }
+        });*/
+
+        video.start();
+        video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+                //mp.setVolume(0f, 0f);
+            }
         });
     }
-
-    /**
-     * 播放sd卡的小视频
-     */
-
-    }
+}
 
 
 

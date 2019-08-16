@@ -10,15 +10,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <VideoView android:id="@+id/video"
+        <VideoView
+            android:id="@+id/video"
             android:layout_width="match_parent"
-            android:layout_height="500dp"/>
-
-        <Button
-            android:id="@+id/raw"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/start" />
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
 
 
 

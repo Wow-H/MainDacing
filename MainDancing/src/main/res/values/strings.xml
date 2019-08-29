@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Happy Dancing</string>
+
+    <!-- MA -->
+    <string name="MA_Hello">Hello, I am Zenbo. Nice to meet you.</string>
+    <string name="MA_intro">Let me tell you how to dance with me!  You can move around and I will dance with you,
+        as well as when you wear the watch and launch the watch sensor app,
+        You can also make different hand poses, and I will correspond to different dance steps.</string>
+
+    <!-- SA -->
+    <string name="SA_Welcome">Welcome to happy dancing</string>
 </resources>

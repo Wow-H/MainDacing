@@ -6,10 +6,13 @@ import android.os.Bundle;
 import com.asus.robotframework.API.RobotCallback;
 import com.asus.robotframework.API.RobotCmdState;
 import com.asus.robotframework.API.RobotErrorCode;
+import com.asus.robotframework.API.RobotFace;
 import com.robot.asus.robotactivity.RobotActivity;
 
 import org.json.JSONObject;
 
+import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 
 import android.widget.Button;
@@ -66,11 +69,11 @@ public class MainActivity extends RobotActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button03 = (Button)findViewById(R.id.button3);
+       //Button button03 = (Button)findViewById(R.id.button3);
 
 
 
-        button03.setOnClickListener(new Button.OnClickListener(){
+        /*button03.setOnClickListener(new Button.OnClickListener(){
 
             public void onClick(View v) {
 
@@ -80,7 +83,7 @@ public class MainActivity extends RobotActivity {
 
             }
 
-        });
+        });*/
 
 
     }
@@ -92,14 +95,21 @@ public class MainActivity extends RobotActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        robotAPI.robot.speak("welcome to happy dancing");
+        robotAPI.robot.speak(getResources().getString(R.string.SA_Welcome));
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                jumpToLayout03();
+            }
+        }, 2000);
     }
 
 
 
 
 
-    public void jumpToLayout01(){
+    /*public void jumpToLayout01(){
 
         setContentView(R.layout.activity_main);
 
@@ -119,7 +129,7 @@ public class MainActivity extends RobotActivity {
 
         });
 
-    }
+    }*/
 
 
     public void jumpToLayout03(){

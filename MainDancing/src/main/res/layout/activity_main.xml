@@ -14,19 +14,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="1174dp"
-        android:layout_height="498dp"
+        android:layout_width="1080dp"
+        android:layout_height="669dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="-100dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="325dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="93dp"
         android:src="@drawable/name" />
 
-    <Button
+    <!--Button
         android:id="@+id/button3"
         android:layout_width="623dp"
         android:layout_height="609dp"
@@ -38,5 +38,5 @@
         android:layout_marginTop="-400dp"
         android:layout_marginEnd="300dp"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/start" />
+        android:background="@drawable/start" /-->
 </RelativeLayout>

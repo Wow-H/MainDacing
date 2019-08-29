@@ -83,7 +83,7 @@ public class StartActivity extends RobotActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        Button button05 = (Button) findViewById(R.id.button5);
+        Button button05 = (Button) findViewById(R.id.genderTextView);
 
 
         button05.setOnClickListener(new Button.OnClickListener() {
@@ -99,7 +99,7 @@ public class StartActivity extends RobotActivity {
             }
 
         });
-        Button button4 = (Button) findViewById(R.id.button4);
+        Button button4 = (Button) findViewById(R.id.dancewithme);
 
         button4.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -131,7 +131,7 @@ public class StartActivity extends RobotActivity {
 
         });
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.zenbosdance);
 
         button.setOnClickListener(new Button.OnClickListener() {
             @Override

@@ -1,55 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.robot.asus.MainDancing.StartActivity">
+    android:background="#000000"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="1000dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-        android:background="@drawable/dance"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/touch"
+            android:gravity="left"
+            android:textColor="#ffffff"
+            android:textSize="80sp"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="1000dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        <Button
+            android:id="@+id/dancewithme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#2c3e50"
+            android:text="@string/dacneWithme"
+            android:gravity="left"
+            android:textColor="#ecf0f1"
+            android:textSize="120sp"
+            android:textAllCaps="false"/>
 
-        android:background="@drawable/zenbodance"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.56" />
+        <Button
+            android:id="@+id/zenbosdance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#2c3e50"
+            android:text="@string/zenbosDance"
+            android:gravity="left"
+            android:textColor="#ecf0f1"
+            android:textSize="120sp"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="1000dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-
-        android:background="@drawable/watch"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/genderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/demo"
+            android:gravity="left"
+            android:layout_margin="15dp"
+            android:background="#2c3e50"
+            android:textColor="#ecf0f1"
+            android:textSize="120sp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

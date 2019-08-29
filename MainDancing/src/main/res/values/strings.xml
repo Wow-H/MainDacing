@@ -9,4 +9,10 @@
 
     <!-- SA -->
     <string name="SA_Welcome">Welcome to happy dancing</string>
+
+    <!-- layout -->
+    <string name="dacneWithme"> Dance with me</string>
+    <string name="zenbosDance"> Zenbos\' dance</string>
+    <string name="demo"> Demo video</string>
+    <string name="touch"> Touch your option :</string>
 </resources>

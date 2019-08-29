@@ -11,8 +11,8 @@
     <string name="SA_Welcome">歡迎來到 Happy Dancing!</string>
 
     <!-- layout -->
-    <string name="dacneWithme"> 跟我一起跳</string>
-    <string name="zenbosDance"> Zenbo雙人舞</string>
-    <string name="demo"> 教學影片</string>
+    <string name="dacneWithme">&#160; 跟我一起跳</string>
+    <string name="zenbosDance">&#160; Zenbo雙人舞</string>
+    <string name="demo"> &#160;教學影片</string>
     <string name="touch"></string>
 </resources>

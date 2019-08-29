@@ -11,8 +11,8 @@
     <string name="SA_Welcome">Welcome to happy dancing</string>
 
     <!-- layout -->
-    <string name="dacneWithme"> Dance with me</string>
-    <string name="zenbosDance"> Zenbos\' dance</string>
-    <string name="demo"> Demo video</string>
-    <string name="touch"> Touch your option :</string>
+    <string name="dacneWithme"> &#160;Dance with me</string>
+    <string name="zenbosDance"> &#160;Zenbos\' dance</string>
+    <string name="demo">&#160; Demo video</string>
+    <string name="touch"> &#160;Touch your option :</string>
 </resources>
